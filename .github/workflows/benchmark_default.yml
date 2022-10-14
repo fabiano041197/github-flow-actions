@@ -1,5 +1,5 @@
 # Workflow que executa os testes do script e exporta os resultados como artefatos
-name: Benchmark the default branch
+name: Benchmark para a banch principal
 # Roda somente em novos commits na branch principal
 on:
   push:
@@ -18,10 +18,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-        # Normally you would produce the benchmark output here
-
         # Envia os resultados como artefatos
-      - name: Upload the results
+      - name: Upload dos artefatos
         uses: actions/upload-artifact@v2
         # Argumentos passados para o actions
         with:

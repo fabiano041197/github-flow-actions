@@ -30,7 +30,7 @@ jobs:
           path: old_benchmark
           commit: $
         continue-on-error: true
-      - name: Compare and comment
+      - name: Compara e comenta
         # Usar a ação definida nesse repositorio 
         uses: ./
         with:

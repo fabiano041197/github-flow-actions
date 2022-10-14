@@ -25,3 +25,12 @@ jobs:
         with:
           name: benchmark_results
           path: benchmark.json
+
+  checa-resultados:
+    runs-on: ubuntu-latest
+    name: Checa resultados
+    steps:
+      - name: Checkout
+        run: echo "check dos resultados"
+    needs: benchmark
+

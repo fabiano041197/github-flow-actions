@@ -1,10 +1,9 @@
-# Workflow to benchmark pull requests and compare with the default branch.
-name: Benchmark pull requests and compare
-# This time, run on pull requests against your default branch
+# Workflow para pull request
+name: Benchmark para pull requests e comparação
 on:
   pull_request:
     branches:
-      - "main" # again, replace if needed
+      - "main"
 
 jobs:
   benchmark:
@@ -13,8 +12,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
-        # Run your benchmarks here...
 
         # Exemplo de como baixar os artefatos de outras branchs de outros repositorios do github
       - name: Baixa os artefatos gerados pelos testes

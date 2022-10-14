@@ -1,4 +1,4 @@
-name: 'Comment with Benchmark Result'
+name: 'Comenta os resultados do benchmark'
 description: 'teste de action'
 # Aqui nos definimos as entradas, quais serão setadas do arquivo do workflow e que será consumida pelo nosso codigo
 inputs:

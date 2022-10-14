@@ -33,7 +33,7 @@ function createMessage(benchmark, comparisonBenchmark) : string {
           const oldValue = comparisonBenchmark[key];
           message += `| ${oldValue.toFixed(2)}`;
       } catch (error) {
-          console.log("Can not read key", key, "from the comparison file.")
+          console.log("Não foi possível ler a chave", key, "do arquivo de comparação.")
           message += "| ";
       }
       message += "| \n";
